@@ -1,0 +1,32 @@
+#rate-button{
+  margin-top: 50px;
+}
+
+#rate-button img{
+  width: 100%;
+  max-height: 200px;
+}
+
+#rate-button button{
+  border: 3px solid green;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: lightgreen;
+  font-weight: bold;
+}
+
+/*club overview section*/
+#club-overview .club{
+  border: 1px solid blue;
+  min-height: 100px;
+}
+
+#club-overview .club img{
+  max-width: 70%;
+  max-height: 100px;
+  border: 1px solid black;
+}
+
+#club-overview .club input{
+  border: 1px solid black;
+}
