@@ -1,161 +1,22 @@
-* {
-  background-color: lightgrey;
-  border: 0;
-  padding: 0;
-  margin: 0;
+body { padding-top: 70px; }
+
+.card {
+  margin: 1.5em;
 }
 
-/*nav-bar*/
-#nav-bar img{
-  max-width: 100%;
-  max-height: 100%;
-  /*border: 1px black solid;*/
-  grid-area: logo;
+.card-img-top {
+  padding: 5px;
 }
 
-#nav-bar .menu{
-  grid-area: menu;
-  border: 1px black solid;
-  list-style-type: none;
-  text-align: right;
-  margin: auto 10px auto auto;
+.bootstrap-tagsinput .tag {
+  background: #0275d8;
+  border: 1px solid white;
+  padding: 1px 8px;
+  margin-bottom: 0;
+  color: white;
+  border-radius: 4px;
 }
 
-#nav-bar{
-  background-color: white;
-  height: 4em;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "logo . menu menu menu";
-}
-
-#nav-bar .menu li{
-  float: none;
-  display: inline;
-  margin: 10px;
-}
-
-#nav-bar .menu li a{
-  font-size: 16px;
-  color: black;
-  display: inline;
-
-}
-
-/*hero section*/
-#hero img{
-  max-width: 100%;
-  max-height: 100%;
-  /*border: 1px black solid;*/
-  grid-area: banner;
-}
-
-#hero h1{
-  grid area: text;
-}
-
-#hero .menu{
-  grid-area: menu;
-  border: 1px black solid;
-  list-style-type: none;
-  text-align: right;
-  margin: auto 10px auto auto;
-}
-
-#hero{
-  background-color: white;
-  height: 10em;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "text banner";
-  margin-top: 50px;
-}
-
-/*search section*/
-#search-bar{
-  margin: 50px 20px 50px 20px;
-  border: 4px solid black;
-  padding: 20px;
-  text-align: center;
-}
-
-/*club list*/
-#club-list{
-  background-color: white;
-  width: 100%;
-  margin-top: 50px;
-}
-
-#club-list h2{
-  grid-area: 1/1/2/3;
-  /*border: 1px solid black;*/
-  text-align: center;
-  margin: 10px auto 10px auto;
-}
-
-#club-list .clubs{
-  /*border: 1px solid black;*/
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 10px;
-}
-
-#club-list .clubs .club{
-  border: 1px solid blue;
-  min-height: 100px;
-}
-
-#club-list .clubs .club img{
-  max-width: 70%;
-  max-height: 100%;
-  border: 1px solid black;
-}
-
-#club-list .clubs .club input{
-  border: 1px solid black;
-}
-
-/*event section*/
-#event-container{
-  background-color: white;
-  text-align: center;
-  margin-top: 50px;
-}
-
-#event-containter h2{
-  border: 1px solid black;
-  margin: 10px auto 10px auto;
-}
-
-#event-container textarea{
-  border: 4px solid black;
-  border-radius: 20px;
-  background-color: lightblue;
-}
-
-/*footer section*/
-#footer .menu{
-  margin-top: 50px;
-  background-color: lightblue;
-}
-
-#footer .menu li{
-  float: none;
-  display: inline;
-  padding: 10px;
-  text-decoration: none;
-}
-
-#footer .menu li a{
-  font-size: 16px;
-  color: grey;
-  display: inline;
-
+#login-container{
+  max-width: 500px;
 }

@@ -1,62 +1,191 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<title>Bus 465 project</title>
-<link rel="stylesheet" href="style.css" />
-<link rel="stylesheet" href="club-page.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <!--navigation bar-->
-  <div id="nav-bar">
-    <img src="logo.jpg" alt="logo">
-    <ul class="menu">
-      <li><a href="">List of clubs</a></li>
-      <li><a href="">About us</a></li>
-      <li><a href="">FAQ</a></li>
-    </ul>
+  <!--header-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!--logo -->
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Club reviews
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- menu / navigation bar -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">List of clubs</a>
+        </li>
+
+        <!-- login / sign up drop down -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Login</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Create Account</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div class="my-3 container">
+    <h5 class="">Club name 1</h5>
+    <div class="row">
+      <img class="col-2 img-fluid" src="logo.jpg" alt="" height="100">
+      <div class="col-9">
+        <p class="">About: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="">Contact: abc@gmail.com</p>
+      </div>
+    </div>
+    <p>If you know about this club <a href="#">Rate this Club</a> to give us more info</p>
   </div>
 
-  <!--rate this club -->
-  <div id="rate-button">
-    <img src="logo.jpg" alt="">
-    If you know about this club >> <button type="button" name="button">Rate this Club</button> to give us more info
-  </div>
+  <br>
 
-  <!-- club overview-->
-  <div id="club-overview">
-    <div class="club">
-      <img src="logo.jpg" alt="">
+  <div class="detail container">
+    <h5>Category</h5>
+    <div>
+      <!--loop over categories-->
+      <button type="button" class="btn btn-outline-primary m-1 disabled">Arts</button>
+      <button type="button" class="btn btn-outline-primary m-1">Business Related</button>
+      <button type="button" class="btn btn-outline-primary m-1">Career Development</button>
+      <button type="button" class="btn btn-outline-primary m-1 disabled">Charitable</button>
+      <button type="button" class="btn btn-outline-primary m-1 disabled">Cultural</button>
+      <button type="button" class="btn btn-outline-primary m-1 disabled">Other</button>
+      <button type="button" class="btn btn-outline-primary m-1 disabled">Political</button>
+      <button type="button" class="btn btn-outline-primary m-1">Social</button>
+      <button type="button" class="btn btn-outline-primary m-1">Social Justice/Activism</button>
+      <button type="button" class="btn btn-outline-primary m-1">Special Interest/Hobby</button>
+      <button type="button" class="btn btn-outline-primary m-1 disabled">Spiritual</button>
+      <button type="button" class="btn btn-outline-primary m-1">Technology</button>
+
+    </div>
+
+    <br><br>
+
+    <div>
+      <h5>Skills</h5>
+      <!--loop over list of skills-->
+      <button type="button" class="btn btn-primary m-1">Communication skills</button>
+      <button type="button" class="btn btn-primary m-1">Leadership skills</button>
+      <button type="button" class="btn btn-primary m-1">Organizational skills</button>
+      <button type="button" class="btn btn-primary m-1">Time management skills</button>
+      <button type="button" class="btn btn-primary m-1">Collaboration skills</button>
+      <button type="button" class="btn btn-primary m-1">Problem-solving skills</button>
+
+    </div>
+
+    <br><br>
+
+    <div>
+      <h5>Reviews</h5>
       <br>
-      <input type="text" name="clubname" value="" class="clubname">
-      <input type="text" name="description" value="" class="description">
-      <input type="text" name="contact" value="" class="contact">
+      <!--loop over each review from database [time][fun][date][comment][helpful rating]-->
+      <!--start of this review-->
+      <div class="row">
+        <div class="col-sm-4">
+          <div>
+            <div class="progress">
+              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Time commitment</p>
+          </div>
+          <div>
+            <div class="progress">
+              <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Fun</p>
+          </div>
+
+          <div class="inline">
+            <button type="button" class="btn btn-success m-1">helpful</button>
+            <button type="button" class="btn btn-danger m-1">not helpful</button>
+          </div>
+
+        </div>
+        <div class="col-sm-8 review">
+          <blockquote class="blockquote text-right">
+            <h6>Comment:</h6>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">A wise human on a beautiful day of May 2021 </footer>
+          </blockquote>
+        </div>
+      </div>
+      <hr>
+      <!--end of this review -->
+
+      <!--start of this review-->
+      <div class="row">
+        <div class="col-sm-4">
+          <div>
+            <div class="progress">
+              <div class="progress-bar w-25" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Time commitment</p>
+          </div>
+          <div>
+            <div class="progress">
+              <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <p>Fun</p>
+          </div>
+
+          <div class="inline">
+            <button type="button" class="btn btn-success m-1">helpful</button>
+            <button type="button" class="btn btn-danger m-1">not helpful</button>
+          </div>
+
+        </div>
+        <div class="col-sm-8 review">
+          <blockquote class="blockquote text-right">
+            <h6>Comment:</h6>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">A wise human on a beautiful day of Feb 2021 </footer>
+          </blockquote>
+        </div>
+      </div>
+      <hr>
+      <!--end of this review -->
+
     </div>
   </div>
 
 
-  <!-- form section -->
-  <div class="club-detail">
-    <h3>Type</h3>
-      <ul>
-        //loop over the list of type
-        <li></li>
-      </ul>
-    <h3>Skills</h3>
-    <ul>
-      //loop over the list of skills
-      <li></li>
-    </ul>
-    <div class="review-list"></div>
-      //loop over reviews
-      <div class="review">
-        <h4>Review</h4>
-        <textarea name="name" rows="8" cols="80"></textarea>
-        <p>rank:</p>
-        <textarea name="name" rows="1" cols="8"></textarea>
-      </div>
 
+  <!--footer section -->
+  <div class="container text-center mt-5">
+    <h6>© 2021 Club Reviews - A BUS 465 project with ❤</h6>
   </div>
 
-</body>
-</html>
+  </body>
+  </html>

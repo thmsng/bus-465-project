@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!--boostrap tagsinput-->
+  <link href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.css" rel="stylesheet"/>
+
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!--header-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!--logo -->
+    <a class="navbar-brand" href="#">
+      <img src="logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Club reviews
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- menu / navigation bar -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">List of clubs</a>
+        </li>
+
+        <!-- login / sign up drop down -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Login</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Create Account</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FAQ</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!--start of create account -->
+  <div class="container text-center" style="min-height: 80vh;">
+    <br>
+    <h3>Create an account</h3>
+    <h6>Create your account, it takes less than a minute. If you already have an account <a href="#">login</a></h6>
+    <br>
+
+    <!--start of create account inputs-->
+    <div class="container" style="width: 50%; min-width: 430px;">
+      <div class="row g-3 align-items-left mb-3 mr-auto">
+        <div class="col-3">
+          <label for="create-account-first-name" class="col-form-label">First name</label>
+        </div>
+        <div class="col-9">
+          <input type="text" class="form-control required" id="create-account-first-name">
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-left mb-3">
+        <div class="col-3">
+          <label for="create-account-last-name" class="col-form-label">Last name</label>
+        </div>
+        <div class="col-8">
+          <input type="text" class="form-control" id="create-account-last-name">
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-left mb-3">
+        <div class="col-3">
+          <label for="create-account-email" class="col-form-label">SFU email</label>
+        </div>
+        <div class="col-7">
+          <input type="email" class="form-control required" id="create-account-email">
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-left mb-3">
+        <div class="col-3">
+          <label for="create-account-password" class="col-form-label">Password</label>
+        </div>
+        <div class="col-6">
+          <input type="password" class="form-control required" id="create-account-password">
+        </div>
+      </div>
+
+      <div class="row g-3 align-items-left mb-3">
+        <div class="col-3">
+          <label for="create-account-password" class="col-form-label">Concentration</label>
+        </div>
+        <div class="col-5">
+          <input type="password" class="form-control" id="create-account-concentration">
+        </div>
+        <button class="col-4 btn btn-primary" type="submit">Create Account</button>
+      </div>
+
+    </div>
+  </div>
+  <!--end of create account -->
+
+
+  <!-- jQuery, Popper.js, Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- boostrap tagsinput-->
+  <script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.8.0/bootstrap-tagsinput.min.js"></script>
+  <script src="myScript.js"></script>
+
+  <!--footer section -->
+  <div class="container text-center mt-5">
+    <h6>© 2021 Club Reviews - A BUS 465 project with ❤</h6>
+  </div>
+
+</body>
+</html>
